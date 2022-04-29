@@ -1,0 +1,6 @@
+net\codejava\entity\Persona_.class
+net\codejava\repositories\PersonaRepository.class
+net\codejava\services\PersonaService.class
+net\codejava\controller\AppController.class
+net\codejava\entity\Persona.class
+net\codejava\AppMain.class
