@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="net.codejava_Evidencia3_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>net.codejava.entity.Imc</class>
+    <class>net.codejava.entity.Usuario</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-18-210-64-223.compute-1.amazonaws.com:5432/d2teevnqrh14jn"/>
+      <property name="javax.persistence.jdbc.user" value="tfutzzlaqynmct"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="eba4463aaa697182a2a0ce12cdcb75606fa216910c83edc016930f373e0cf616"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Calcular IMC</title>
+    </head>
+    <body>
+        <div align="center">
+            <p th:text="${session.mySessionAttribute}" th:unless="${session == null}">[...]</p>
+            <h1>Cálculo de IMC</h1>
+            <br />
+            <form action="#" th:action="@{/save_imc}" th:object="${imc}"
+                  method="post">
+
+                <table border="0" cellpadding="10">
+                     <tr>
+                        <td>ID:</td>
+                        <td><input type="number" th:field="*{id}" /></td>
+                    </tr>
+                    <tr>
+                        <td>Usuario que registra:</td>
+                        <td><input type="text" th:field="*{nombreuser}" /></td>
+                    </tr>
+                    <tr>
+                        <td>Estatura:</td>
+                        <td><input type="number" step="0.01" th:field="*{estatura}" /></td>
+                    </tr>
+                    <tr>
+                        <td>Peso:</td>
+                        <td><input type="number" step="0.01" th:field="*{peso}" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Save</button> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
